@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Amorphous Gardens</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#div_main").fadeIn(1500);
+  $("#item0").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css(
+        {"background-image": "url(images/boys.jpg)", "background-size": "cover"});
+      });
+    $("#active").text("This sets the text of this window for Item0");
+    $("#div_main").fadeToggle("slow");
+    });
+  $("#item1").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css({"background-image": "url(images/basket1.jpg)", "background-size": "cover"});
+      });
+        $("#active").text("This sets the text of this window for Item1");
+    $("#div_main").fadeToggle("slow");
+    });
+  $("#item2").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css({"background-image": "url(images/basket2.jpg)", "background-size": "cover"});
+      });
+        $("#active").text("Or this for the text of this window for Item2");
+    $("#div_main").fadeToggle("slow");
+    });
+  $("#item3").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css({"background-image": "url(images/basket1.jpg)", "background-size": "cover"});
+      });
+        $("#active").text("Or this for the text of this window for Item3");
+    $("#div_main").fadeToggle("slow");
+    });
+  $("#item4").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css({"background-image": "url(images/basket2.jpg)", "background-size": "cover"});
+      });
+        $("#active").text("Or this for the text of this window for Item4");
+    $("#div_main").fadeToggle("slow");
+    });
+  $("#item5").click(function(){
+    $("#div_main").fadeToggle("slow", function(){
+      $("#div_main").css({"background-image": "url(images/basket1.jpg)", "background-size": "cover"});
+      });
+        $("#active").text("Or this for the text of this window for Item5");
+    $("#div_main").fadeToggle("slow");
+    });
+});
+
+</script>
+</head>
+
+<body>
+
+
+<!--start page code -->
+<!--<div class="wrapper"> -->
+<div class="header">
+  <h1>Amorphous Gardens</h1>
+  <h2>~by Jonathan and Sevanna Picarsic~</h2>
+</div>
+
+<div class="container"> 
+  <div class="grid_1 alpha" id="nav_container">
+    <ul class="navlist">
+      <li id="item0"><a href="#">Home</a></li>
+      <li id="item1"><a href="#">About</a></li>       
+      <li id="item2"><a href="#">CSA</a></li>
+      <li id="item3"><a href="#">Markets</a></li>
+      <li id="item4"><a href="#">Clients</a></li>
+      <li id="item5"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="grid_4 omega" id="content_container">
+    <div id="div_main"></div>      
+    <div id="div_text">
+      <p id="active">This is a test.</p>
+    </div>
+  </div>
+  <div class="block_quote grid_3 prefix_2 omega"><p class="triangle-isosceles">This is a test quote.</p></div>
+  
+
+</div>  <!--end "container"-->
+
+<div class="footer">
+  <p id="copyright">&copy; 2013 Amorphous Gardens.  All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
